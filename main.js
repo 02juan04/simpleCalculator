@@ -1,10 +1,13 @@
-var button1 = document.getElementById("one");
+const buttons = document.querySelectorAll(".main-buttons");
 
 let number = ""
 
-button1.addEventListener("click", function(){
-    number += this.textContent;
 
-    document.getElementById('menu').textContent = number
-
+buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        number += button.textContent
+        document.getElementById('menu').textContent = number
+    })
 })
+
+console.log(number)

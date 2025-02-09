@@ -16,15 +16,23 @@ body{
 }
 
 #menu{
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
-    max-height: 100%;
-    padding: 10px;
+    height:inherit;
+    padding: 10px 20px;
     box-sizing: border-box;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    border: none;
     grid-column: 1 / -1;
+    border-radius: 15px;
+    font-size: 2em;
+    font-family: 'MRK Maston', sans-serif;
+    text-align: right;
 }
 
+#menu:focus{
+    outline: none;
+}
 .numbers{
     display: grid;
     grid-template-columns: repeat(3, auto);

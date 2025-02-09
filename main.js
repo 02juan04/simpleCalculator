@@ -32,10 +32,15 @@ function handleButton(button){
     else if (button.textContent === "BACK") {
         newNumber = backspace(menu)
         currentNumber = newNumber
+        menu.value = newNumber
         
     }
     else if(button.textContent === "CLEAR") {
         currentNumber = ""
+        menu.value = currentNumber
+        total = 0
+        previousNumber = ""
+        prevOperation = ""
     }
 }
 
